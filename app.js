@@ -154,7 +154,7 @@ function next() {
 
 function onclickA() {
     if (numeroPregunta <= preguntas.length - 1) {
-        switch (preguntas[numeroPregunta].bFacultad) {
+        switch (preguntas[numeroPregunta].aFacultad) {
             case 'Economia':
 
                 facultades.economia.puntos++;
