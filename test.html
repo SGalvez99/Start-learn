@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Start Learn</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1 onclick="location='index.html'"> START LEARN </h1>
+
+        </div>
+        <div class="description">
+            <h2> Test vocacional efectivo e interactivo </h2>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div id="popupWin" class="overlayWin">
+            <div class="popupWin">
+                <h2></h2>
+                <input onclick="location='select.html'" type="button" value="Nuevo test" class="btn-regreso">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cuestionario">
+            <div class="pregunta" id="pregunta"></div>
+            <div class="opciones">
+                <div class="contenedor a">
+                    <div id="a" onclick="onclickA()"></div>
+                    <div class="adescription"></div>
+                </div>
+                <div class="contenedor b">
+                    <div id="b" onclick="onclickB()"></div>
+                    <div class="bdescription"></div>
+                </div>
+                <!-- <img src="assets/P1A.jpg" alt="" onclick="" id="a" width="400" height="210">
+                <img src="assets/P1B.jpeg" alt="" onclick="" id="b" width="400" height="210"> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            numeroPregunta = 0;
+            next();
+            numeroPregunta++;
+        }
+
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
